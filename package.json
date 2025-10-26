@@ -1,7 +1,7 @@
 {
-  "name": "next-rating",
-  "version": "1.0.0",
-  "description": "",
+  "name": "next-flex-rating",
+  "version": "1.0.1",
+  "description": "A lightweight and flexible rating component for React & Next.js. Supports fractional values, custom icons, and accessibility.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -9,18 +9,35 @@
     "dist"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsup src/components/Rating/index.ts --format cjs,esm --dts"
+    "build": "tsup src/components/Rating/index.ts --format cjs,esm --dts",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehefujali/next-flex-rating"
+  },
+  "keywords": [
+    "react",
+    "nextjs",
+    "rating",
+    "star-rating",
+    "fractional-rating",
+    "custom-rating",
+    "typescript"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mehefujali/next-flex-rating/issues"
+  },
+  "homepage": "https://github.com/mehefujali/next-flex-rating#readme",
   "peerDependencies": {
-    "react": "^19.2.0"
+    "react": ">=16.8.0"
   },
   "devDependencies": {
-    "@types/react": "^19.2.2",
-    "tsup": "^8.5.0",
-    "typescript": "^5.9.3"
+    "@types/react": "^18.0.0",
+    "react": "^18.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
   }
 }
