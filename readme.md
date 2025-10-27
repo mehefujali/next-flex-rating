@@ -1,8 +1,8 @@
-# next-rating
+# next-flex-rating
 
 A lightweight, flexible, and fully customizable rating component designed for React and Next.js.
 
-Built with TypeScript, `next-rating` has zero dependencies and provides full support for fractional values, custom icons (SVG, Emojis, Components), and accessibility (keyboard navigation).
+Built with TypeScript, `next-flex-rating` has zero dependencies and provides full support for fractional values, custom icons (SVG, Emojis, Components), and accessibility (keyboard navigation).
 ## Demo
 https://next-flex-rating-demo.vercel.app
 
@@ -23,10 +23,10 @@ https://next-flex-rating-demo.vercel.app
 Install the package using npm or yarn:
 
 ```bash
-npm install next-rating
+npm install next-flex-rating
 ```
-Bashyarn add next-rating
-Basic Usage1. Read-Only DisplayThis is the simplest way to use the component. It's ideal for displaying an existing rating.JavaScriptimport { Rating } from 'next-rating';
+Bashyarn add next-flex-rating
+Basic Usage1. Read-Only DisplayThis is the simplest way to use the component. It's ideal for displaying an existing rating.JavaScriptimport { Rating } from 'next-flex-rating';
 ```
 function ProductCard() {
   return (
@@ -39,7 +39,7 @@ function ProductCard() {
 ```
 2. Controlled (Interactive) ComponentTo capture user input, manage the value in your component's state and pass the onChange handler.JavaScriptimport React, { useState } from 'react';
 ```
-import { Rating } from 'next-rating';
+import { Rating } from 'next-flex-rating';
 
 function LeaveReview() {
   const [rating, setRating] = useState(0);
@@ -56,7 +56,7 @@ function LeaveReview() {
   );
 }
 ```
-Customization Examples1. Custom Icons (Emoji) and SizingYou can pass simple strings or emojis as icons and control the size and spacing.JavaScriptimport { Rating } from 'next-rating';
+Customization Examples1. Custom Icons (Emoji) and SizingYou can pass simple strings or emojis as icons and control the size and spacing.JavaScriptimport { Rating } from 'next-flex-rating';
 ```
 <Rating
   value={4.2}
@@ -67,7 +67,7 @@ Customization Examples1. Custom Icons (Emoji) and SizingYou can pass simple stri
   readOnly={true}
 />
 ```
-2. Custom Icons (SVG Component)For ultimate control, pass your own SVG React components.JavaScriptimport { Rating } from 'next-rating';
+2. Custom Icons (SVG Component)For ultimate control, pass your own SVG React components.JavaScriptimport { Rating } from 'next-flex-rating';
 ```
 // 1. Define your custom icon
 
@@ -88,7 +88,7 @@ const HeartIcon = () => (
   size={30}
 />
 ```
-3. 10-Star RatingSimply change the count prop.JavaScriptimport { Rating } from 'next-rating';
+3. 10-Star RatingSimply change the count prop.JavaScriptimport { Rating } from 'next-flex-rating';
 
 <Rating
   value={8.5}
