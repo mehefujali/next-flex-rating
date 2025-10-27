@@ -3,6 +3,8 @@
 A lightweight, flexible, and fully customizable rating component designed for React and Next.js.
 
 Built with TypeScript, `next-rating` has zero dependencies and provides full support for fractional values, custom icons (SVG, Emojis, Components), and accessibility (keyboard navigation).
+## Demo
+https://next-flex-rating-demo.vercel.app
 
 ## Features
 
